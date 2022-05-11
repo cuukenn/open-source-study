@@ -12,6 +12,11 @@
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.cuukenn.openstudysource</groupId>
+                <artifactId>caffeine-jmx-monitor-starter</artifactId>
+                <version>${rVersion}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

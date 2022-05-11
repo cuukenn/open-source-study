@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dependencies</module>
-        <module>caffeine-jmx-monitor</module>
+        <module>caffeine-jmx-monitor-starter</module>
         <module>sample</module>
     </modules>
     <packaging>pom</packaging>

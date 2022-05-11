@@ -11,5 +11,6 @@
     <artifactId>sample</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>caffeine-jmx-monitor-sample</module>
     </modules>
 </project>

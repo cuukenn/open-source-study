@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  cache:
+    type: caffeine
+    cache-names:
+      - normal
+    caffeine:
+      spec: maximumSize=500,expireAfterWrite=5s
+      mbean:
+        enable: true
