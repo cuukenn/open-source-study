@@ -1,0 +1,3 @@
+com.cuukenn.openstudysource.jdk.spi.plugin.CodePluginServiceImpl
+com.cuukenn.openstudysource.jdk.spi.plugin.MenuPluginServiceImpl
+com.cuukenn.openstudysource.jdk.spi.plugin.PhonePluginServiceImpl
