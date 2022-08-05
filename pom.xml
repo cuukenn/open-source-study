@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dependencies</module>
-        <module>caffeine-jmx-monitor</module>
+        <module>caffeine-jmx-monitor-starter</module>
         <module>sample</module>
     </modules>
     <packaging>pom</packaging>
@@ -89,6 +89,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
     <profiles>
         <!--设置不同环境变量下的差异化配置-->
         <!--针对spring进行配置并设置dev作为默认启用的spring环境配置-->

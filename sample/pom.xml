@@ -11,5 +11,10 @@
     <artifactId>sample</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>caffeine-jmx-monitor-sample</module>
+        <module>jdk-sample</module>
+        <module>kafka-sample</module>
+        <module>rabbitmq-sample</module>
+        <module>rocketmq-sample</module>
     </modules>
 </project>
