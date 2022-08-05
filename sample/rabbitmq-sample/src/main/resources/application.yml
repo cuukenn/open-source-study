@@ -1,0 +1,6 @@
+server:
+  port: 8082
+  rabbitmq:
+    host: 127.0.0.1
+    username: rabbitmq
+    password: rabbitmq

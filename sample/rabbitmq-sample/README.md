@@ -1,0 +1,1 @@
+- 环境安装：https://github.com/cuukenn/docker-scripts/tree/master/rabbitmq

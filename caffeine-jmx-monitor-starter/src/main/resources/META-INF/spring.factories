@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.cuukenn.openstudysource.caffeine.support.spring.CaffeineSamplerMXBeanAutoConfiguration
+com.cuukenn.openstudysource.sample.caffeine.support.spring.CaffeineSamplerMXBeanAutoConfiguration
