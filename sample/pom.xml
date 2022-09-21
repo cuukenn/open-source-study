@@ -16,5 +16,6 @@
         <module>kafka-sample</module>
         <module>rabbitmq-sample</module>
         <module>rocketmq-sample</module>
+        <module>redis-psub-bug-demo</module>
     </modules>
 </project>
