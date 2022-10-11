@@ -18,5 +18,6 @@
         <module>rocketmq-sample</module>
         <module>redis-psub-bug-demo</module>
         <module>simple-web</module>
+        <module>dynamic-mongodb-demo</module>
     </modules>
 </project>
