@@ -13,4 +13,6 @@ public interface IMongoService {
     String test3();
 
     String test4();
+
+    String test5();
 }
