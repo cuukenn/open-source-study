@@ -15,7 +15,7 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.opensource.cuukenn</groupId>
+      <groupId>io.github.cuukenn</groupId>
       <artifactId>dynamic-mongodb-database-starter</artifactId>
       <version>0.0.1</version>
     </dependency>
