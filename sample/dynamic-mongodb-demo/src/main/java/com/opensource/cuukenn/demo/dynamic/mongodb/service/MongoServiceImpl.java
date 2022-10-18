@@ -1,6 +1,8 @@
 package com.opensource.cuukenn.demo.dynamic.mongodb.service;
 
-import com.opensource.cuukenn.dynamic.database.mongodb.support.aop.DynamicMongo;
+import io.github.cuukenn.dynamic.database.mongodb.support.DynamicMongo;
+import io.github.cuukenn.dynamic.database.mongodb.support.context.parser.HeaderValueParser;
+import io.github.cuukenn.dynamic.database.mongodb.support.context.parser.SessionValueParser;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
@@ -53,5 +55,24 @@ public class MongoServiceImpl implements IMongoService {
     @Override
     public String test5() {
         return mongoTemplate.exists(new Query(), "test001") + "";
+    }
+
+    @Override
+    @DynamicMongo(instanceId = "#{#instanceId}")
+    public String test6(String instanceId) {
+        return mongoTemplate.exists(new Query(), "test006") + "";
+    }
+
+
+    @Override
+    @DynamicMongo(HeaderValueParser.HEADER_PREFIX + "instanceId")
+    public String test7() {
+        return mongoTemplate.exists(new Query(), "test007") + "";
+    }
+
+    @Override
+    @DynamicMongo(SessionValueParser.SESSION_PREFIX + "instanceId")
+    public String test8() {
+        return mongoTemplate.exists(new Query(), "test008") + "";
     }
 }

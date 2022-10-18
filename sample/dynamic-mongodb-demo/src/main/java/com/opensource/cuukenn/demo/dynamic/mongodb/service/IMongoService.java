@@ -15,4 +15,10 @@ public interface IMongoService {
     String test4();
 
     String test5();
+
+    String test6(String instanceId);
+
+    String test7();
+
+    String test8();
 }

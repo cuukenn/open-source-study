@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author changgg
  */
@@ -60,5 +62,21 @@ public class MongoTestController {
     @GetMapping("test-5")
     public String test5() {
         return mongoService.test5();
+    }
+
+    @GetMapping("test-6")
+    public String test6() {
+        return mongoService.test6("test006");
+    }
+
+    @GetMapping("test-7")
+    public String test7(HttpServletRequest request) {
+        return mongoService.test7();
+    }
+
+    @GetMapping("test-8")
+    public String test8(HttpServletRequest request) {
+        request.getSession().setAttribute("instanceId", "test008");
+        return mongoService.test8();
     }
 }
