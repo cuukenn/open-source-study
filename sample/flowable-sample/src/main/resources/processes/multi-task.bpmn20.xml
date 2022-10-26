@@ -16,7 +16,7 @@
       <signalEventDefinition signalRef="data1-finish"/>
     </intermediateCatchEvent>
     <serviceTask id="task1" flowable:exclusive="true" name="任务1"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.Task1ServiceImpl"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.Task1ServiceImpl"/>
     <sequenceFlow id="sid-3e44485d-1565-4251-83da-00eefa30ae65" sourceRef="sid-1c10ac50-0624-4efb-8ec3-5d18c43b48f3"
                   targetRef="task-1-event"/>
     <sequenceFlow id="sid-f4f552d3-dbe0-4e07-b3f0-cf11dacb07fa" sourceRef="task-1-event" targetRef="task1"/>
@@ -24,7 +24,7 @@
       <signalEventDefinition signalRef="data2-finish"/>
     </intermediateCatchEvent>
     <serviceTask id="task2" name="任务2" flowable:exclusive="true"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.Task2ServiceImpl"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.Task2ServiceImpl"/>
     <sequenceFlow id="sid-bbb3cc37-6e1b-4a62-959c-258c24d7939b" sourceRef="sid-1c10ac50-0624-4efb-8ec3-5d18c43b48f3"
                   targetRef="task-2-event"/>
     <sequenceFlow id="sid-29e841d1-3a99-4273-929f-b23622237ff9" sourceRef="task-2-event" targetRef="task2"/>
@@ -32,14 +32,14 @@
       <signalEventDefinition signalRef="data3-finish"/>
     </intermediateCatchEvent>
     <serviceTask id="task3" name="任务3" flowable:exclusive="true"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.Task3ServiceImpl"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.Task3ServiceImpl"/>
     <sequenceFlow id="sid-dd153304-6d90-495a-8bd0-4df54a7b8a8a" sourceRef="task-3-event" targetRef="task3"/>
     <intermediateCatchEvent id="task-4-event" name="task-4-event">
       <signalEventDefinition signalRef="data1-finish"/>
       <signalEventDefinition signalRef="data3-finish"/>
     </intermediateCatchEvent>
     <serviceTask id="task4" name="任务4" flowable:exclusive="true"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.Task4ServiceImpl"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.Task4ServiceImpl"/>
     <sequenceFlow id="sid-311d4975-e436-4610-99be-880d786b76b4" sourceRef="task-4-event" targetRef="task4"/>
     <sequenceFlow id="sid-e949ce6b-a1e8-45fa-8ac1-13f4dd1b6d3d" sourceRef="sid-1c10ac50-0624-4efb-8ec3-5d18c43b48f3"
                   targetRef="task-3-event"/>
@@ -55,10 +55,10 @@
                   targetRef="sid-a541ab29-9011-405f-9f32-0e501897c6be"/>
     <endEvent id="sid-63b47fce-3310-489c-a70b-9abee92e29fd"/>
     <serviceTask id="create-task" name="创建任务" flowable:exclusive="true"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.StartTaskService"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.StartTaskService"/>
     <parallelGateway id="sid-a541ab29-9011-405f-9f32-0e501897c6be" name="task-para-gateway"/>
     <serviceTask id="end-task" flowable:exclusive="true" name="结束任务"
-                 flowable:class="io.github.cuukenn.opensource.study.sample.flowable.service.impl.EndTaskService"/>
+                 flowable:class="io.github.cuukenn.openstudysource.sample.flowable.service.impl.EndTaskService"/>
     <sequenceFlow id="sid-761e57f7-fc85-4dca-9007-1cd8449880db" sourceRef="sid-a541ab29-9011-405f-9f32-0e501897c6be"
                   targetRef="end-task">
       <conditionExpression xsi:type="tFormalExpression"/>
